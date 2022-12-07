@@ -1,0 +1,439 @@
+:root {
+  /* color palette */
+  --color-main: #2e2f42;
+  --color-secondary: #434455;
+  --color-section: #f4f4fd;
+  --color-accent: #4d5ae5;
+  --color-border: #e7e9fc;
+  --color-background: #ffffff;
+  --color-page: #e5e5e5;
+  --color-btn-active: #404bbf;
+
+  /* gaps */
+  --gap-24: 24px;
+  --gap-48: 48px;
+
+  /* shadow */
+  --shadow-main: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+
+  /* font */
+  --font-main: 'Roboto', sans-serif;
+  --font-secondary: 'Raleway', sans-serif;
+}
+
+/* ---------- GLOBAL STYLE ---------- */
+body {
+  font-family: var(--font-main);
+  letter-spacing: 0.02em;
+  color: var(--color-main);
+
+  background-color: var(--color-page);
+}
+/* ---------- /GLOBAL STYLE ---------- */
+
+/* ---------- DROPPING THE STYLES ---------- */
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  padding-left: 0px;
+}
+/* ---------- /DROPPING THE STYLES ---------- */
+
+/* ---------- COMPONENTS ---------- */
+
+/* section and container */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* hiden text */
+.hiden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* logo */
+.logo {
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+/* title section */
+.section-title {
+  margin-bottom: 72px;
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* title item */
+.item-title {
+  margin-bottom: 8px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* main text */
+.text {
+  line-height: 1.5;
+  color: var(--color-secondary);
+}
+
+/* visibility img */
+.direction-list-item > img,
+.team-list-item > img,
+.examples-list-item > img {
+  display: block;
+  max-width: 100%;
+}
+/* ---------- /COMPONENTS ---------- */
+
+/* ---------- HEADER ---------- */
+.header {
+  padding-top: var(--gap-24);
+  padding-bottom: var(--gap-24);
+
+  background-color: var(--color-background);
+
+  border-bottom: 0.5px solid var(--color-border);
+}
+
+.header-container,
+.header-nav,
+.header-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  color: var(--color-main);
+}
+
+.header-list {
+  display: flex;
+  margin-left: 77px;
+}
+
+.header-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-link {
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-main);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--color-secondary);
+}
+
+.header-link:active {
+  color: var(--color-accent);
+}
+
+.header-contacts {
+  margin-left: auto;
+}
+
+.header-contacts > li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-contact {
+  line-height: 1.5;
+  color: var(--color-secondary);
+}
+
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--color-accent);
+}
+/* ---------- /HEADER ---------- */
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  padding-top: 192px;
+  padding-bottom: 192px;
+
+  background-color: var(--color-main);
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  width: 492px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  color: var(--color-background);
+}
+
+.btn {
+  margin-top: 48px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.18;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--color-background);
+
+  background-color: var(--color-accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: var(--shadow-main);
+}
+
+.btn:active {
+  background-color: var(--color-btn-active);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+/* ---------- /HERO SECTION ---------- */
+
+/* ---------- ABOUT SECTION ---------- */
+.about {
+  padding-bottom: 0;
+
+  background-color: var(--color-background);
+}
+
+.about-list {
+  display: flex;
+  margin-left: calc(-1 * var(--gap-24));
+  flex-wrap: wrap;
+}
+
+.about-list-item {
+  flex-basis: calc(100% / 4 - var(--gap-24));
+  margin-left: var(--gap-24);
+}
+/* ---------- /ABOUT SECTION ---------- */
+
+/* ---------- WHAT ARE ... SECTION ---------- */
+.direction {
+  background-color: var(--color-background);
+}
+
+.direction-list {
+  display: flex;
+  margin-left: calc(-1 * var(--gap-24));
+  margin-top: calc(-1 * var(--gap-24));
+  flex-wrap: wrap;
+}
+
+.direction-list-item {
+  flex-basis: calc(100% / 3 - var(--gap-24));
+  margin-left: var(--gap-24);
+  margin-top: var(--gap-24);
+
+  background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2368.jpg);
+  background-blend-mode: soft-light, normal;
+  border: 1px solid var(--color-border);
+}
+
+/* ---------- /WHAT ARE ... SECTION ---------- */
+
+/* ---------- OUR TEAM SECTION ---------- */
+.team {
+  background-color: var(--color-section);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* variant 1 - use negative margin  */
+  margin-left: calc(-1 * var(--gap-24));
+  margin-top: calc(-1 * var(--gap-24));
+
+  text-align: center;
+}
+
+.team-list-item {
+  /* variant 1 - use negative margin  */
+  flex-basis: calc(100% / 4 - var(--gap-24));
+  margin-left: var(--gap-24);
+  margin-top: var(--gap-24);
+
+  background-color: var(--color-background);
+  box-shadow: var(--shadow-main);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+/* ---------- /OUR TEAM SECTION ---------- */
+
+/* ---------- FOOTER ---------- */
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background-color: var(--color-main);
+}
+
+.footer-logo {
+  color: var(--color-section);
+}
+
+/* line-height for footer-logo */
+.line-height {
+  line-height: 1.17;
+}
+
+.footer-text {
+  margin-top: 16px;
+  width: 264px;
+
+  line-height: 1.5;
+  color: var(--color-border);
+}
+/* ---------- /FOOTER ---------- */
+
+/* ---------- PORTFOLIO ---------- */
+.portfolio {
+  background-color: var(--color-background);
+  padding-top: 96px;
+}
+
+/* filter buttons */
+.filter-btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--color-accent);
+
+  background-color: var(--color-section);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.filter-list-item:not(:last-child) {
+  margin-right: var(--gap-24);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--color-section);
+
+  background-color: var(--color-accent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/* examples */
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  /* variant 2 - use gap  */
+  row-gap: var(--gap-48);
+  column-gap: var(--gap-24);
+}
+
+.examples-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  max-width: 360px;
+  max-height: 120px;
+
+  border-left: 0.5px solid var(--color-section);
+  border-right: 0.5px solid var(--color-section);
+  border-bottom: 0.5px solid var(--color-section);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+/* ---------- /PORTFOLIO ---------- */
