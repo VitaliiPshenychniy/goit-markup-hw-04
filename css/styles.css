@@ -205,6 +205,7 @@ ul {
   padding-bottom: 192px;
 
   background-image: linear-gradient(#2e2f4270, #2e2f4270), url(../images/hero/people-office.jpg);
+  background-position: center;
   background-color: var(--color-main);
   background-size: 1600px;
   background-repeat: no-repeat;
