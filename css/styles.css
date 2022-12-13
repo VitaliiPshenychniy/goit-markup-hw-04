@@ -214,7 +214,7 @@ ul {
 }
 
 .hero-title {
-  max-width: 492px;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 
@@ -293,6 +293,7 @@ ul {
 .work-list {
   display: flex;
   gap: var(--gap-24);
+  flex-wrap: wrap;
 }
 
 .work-image {
@@ -311,9 +312,11 @@ ul {
 .team-list {
   display: flex;
   gap: var(--gap-24);
+  flex-wrap: wrap;
 }
 
 .team-list-card {
+  flex-basis: calc(100% / 4 - var(--gap-24));
   box-shadow: var(--shadow-main);
   border-radius: 0px 0px 4px 4px;
 
@@ -348,6 +351,11 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: var(--color-acent);
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: #31d0aa;
 }
 
 .team-social-icon {
